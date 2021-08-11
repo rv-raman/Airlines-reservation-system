@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <title>Sky Wings</title>
+    <style>
+       
+        #login-form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 34px;
+            background-color: seagreen;
+        }
+        #login-form input{
+            width: 300px;
+            height: 30px;
+        }
+        #login-form label{
+            font-size: 1.3rem;
+        }
+        .btn{
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 3px;
+            width: 140px;
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/logo.png" alt="image" height=60px width="60px">
+            <h1>Sky Wings</h1>
+        </div>
+        <ul id="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Book flight</a></li>
+            <li><a href="#">Flight status</a></li>
+            <li><a href="login.html">Login/Signup</a></li>
+            
+        </ul>
+    </nav>
+    <div id="login-form">
+        <form action="post" id="login">
+            <div>
+            <label for="email">Email :</label><br>
+            <input type="Email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div>    
+            <label for="password">password:</label><br>
+            <input type="password" name="password" placeholder="Enter password" required>
+            </div><br>
+            <button class="btn">cancel</button>
+            <button class="btn" type="submit">Login</button><br>
+            <p>Dont have an account?click below to sign up</p>
+            <button class="btn" onclick="location.href='signup.html'">signup</button>
+        </form>
+        
+    </div>
+
+</body>
+</html>
